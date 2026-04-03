@@ -1,0 +1,74 @@
+/* PAGE */
+.access-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, var(--light), var(--soft-gray));
+}
+
+/* CARD */
+.access-card {
+  background: var(--white);
+  padding: 35px;
+  width: 350px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* TITLE */
+.access-card h2 {
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+/* INPUTS */
+.access-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid var(--soft-gray);
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.access-card input:focus {
+  border-color: var(--mid-gray);
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* BUTTON */
+.access-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.access-card button:hover {
+  background: var(--dark-gray);
+  transform: translateY(-1px);
+}
+
+/* STATUS */
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+  font-size: 14px;
+}

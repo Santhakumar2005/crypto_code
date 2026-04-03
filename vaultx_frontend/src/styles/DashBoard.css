@@ -1,0 +1,148 @@
+:root {
+  --light: #e6e6e6;
+  --soft-gray: #cfcfcf;
+  --mid-gray: #7a7373;
+  --dark-gray: #4a4a4a;
+  --black: #1f1b1b;
+  --white: #ffffff;
+}
+
+/* PAGE */
+.dashboard {
+  min-height: 100vh;
+  padding: 30px;
+  background: linear-gradient(135deg, var(--light), var(--soft-gray));
+}
+
+/* TITLE */
+.dashboard h2 {
+  margin-bottom: 20px;
+  color: var(--black);
+}
+
+/* UPLOAD BOX */
+.upload-box {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* EMPTY TEXT */
+.empty {
+  color: var(--mid-gray);
+}
+
+/* FILE LIST */
+.file-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* FILE CARD */
+.file-card {
+  background: var(--white);
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/* FILE INFO */
+.file-info p {
+  margin: 2px 0;
+  color: var(--mid-gray);
+  font-size: 14px;
+}
+
+/* ACTIONS */
+.file-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BUTTON */
+.file-actions button {
+  padding: 10px 14px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.file-actions button:hover {
+  background: var(--dark-gray);
+}
+
+/* LINK BOX */
+.link-box {
+  display: flex;
+  gap: 8px;
+}
+
+.link-box input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--soft-gray);
+  width: 220px;
+}
+
+.link-box button {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+/* UPLOAD FORM */
+.upload-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* INPUTS */
+.upload-form input[type="email"],
+.upload-form input[type="file"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--soft-gray);
+  background: var(--white);
+  font-size: 14px;
+}
+
+/* EMAIL INPUT WIDTH */
+.upload-form input[type="email"] {
+  flex: 1;
+  min-width: 220px;
+}
+
+/* FILE INPUT */
+.upload-form input[type="file"] {
+  cursor: pointer;
+}
+
+/* BUTTON */
+.upload-form button {
+  padding: 10px 16px;
+  background: var(--black);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.upload-form button:hover {
+  background: var(--dark-gray);
+  transform: translateY(-1px);
+}
