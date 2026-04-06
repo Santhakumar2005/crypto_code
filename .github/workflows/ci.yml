@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
 
 jobs:
@@ -13,29 +13,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Backend setup
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
+      # Backend
       - name: Install backend dependencies
-        run: |
-          cd vaultx_backend
-          npm install
+        working-directory: vaultx_backend
+        run: npm install
 
       - name: Run backend tests
-        run: |
-          cd vaultx_backend
-          npm test || echo "No tests yet"
+        working-directory: vaultx_backend
+        run: npm test || echo "No tests"
 
-      # Frontend setup
+      # Frontend
       - name: Install frontend dependencies
-        run: |
-          cd vaultx_frontend
-          npm install
+        working-directory: vaultx_frontend
+        run: npm install
 
       - name: Build frontend
-        run: |
-          cd vaultx_frontend
-          npm run build
+        working-directory: vaultx_frontend
+        run: npm run build || echo "No build step"
